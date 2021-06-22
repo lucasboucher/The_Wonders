@@ -1,34 +1,111 @@
-.message {
-    text-align: center;
-    font-family: 'Barlow Condensed', sans-serif;
+.component {
+    display: flex;
+    flex-direction: column;
 }
 
-.message__title {
-    font-size: 1.2em;
-    font-weight: 500;
+@font-face {
+    font-family: 'Blacker Pro Titling';
+    src: url('assets/fonts/blacker-pro-titling-bold.otf') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
 }
 
-.message__text {
-    font-weight: 400;
-}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
 .logo {
     margin: auto;
+}
+
+.logo--start {
+    font-family: 'Blacker Pro Titling', sans-serif;
+    font-size: 102px;
+    color: white;
+}
+
+.message {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.message__title {
+    font-weight: 500;
+    font-size: 29px;
+    letter-spacing: 1,68%;
+    margin-bottom: 1em;
+}
+.message__text {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -1.32%;
+    line-height: 31.2px;
 }
 
 .illustration {
     margin: auto;
 }
 
-.nav {
+.slider {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.slider__active {
+    color: #5166CF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slider__inactive {
+    color: #C4C4C4;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button {
+    color: white;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
     justify-content: center;
-    margin: 10px;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1.68%;
 }
 
-.nav__active {
-    color: blue;
+.button--rose {
+    background-color: #FF92C6;
+}
+.button--gradient-XL {
+    background: linear-gradient(103.52deg, #B679D1 -14.05%, #5166CF 105.23%);
+    width: 80%;
+}
+.button--gradient {
+    background: linear-gradient(103.52deg, #B679D1 -14.05%, #5166CF 105.23%);
+    width: 70%;
 }
 
-.nav__inactive {
-    color : grey;
+.title {
+    color: #5166CF;
+    font-family: 'Blacker Pro Titling', sans-serif;
+    font-size: 26px;
+    letter-spacing: 1,68%;
+    margin: auto;
+}
+
+.sep {
+    width: 60%;
+    margin: auto;
 }
