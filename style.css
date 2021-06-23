@@ -291,35 +291,32 @@ a {
 }
 
 .article {
-    margin: auto;
-    width: 85%;
-    box-shadow: 0px 5px 10px 0px #00000040;
     font-family: 'Barlow Condensed', sans-serif;
     color: #34424B;
     font-size: 14px;
-    padding: 15px 10px;
-    border-radius: 20px;
-    margin-left: 5%;
     min-height: 75px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 5%;
+    position: relative;
+    align-items: center;
 }
 
-.article--locked {
-    background-color: #E8E8E8;
+.article__bg {
+    position: absolute;
+    width: calc(100% - 30px);
+    box-shadow: 0px 5px 10px 0px #00000040;
+    border-radius: 20px;
+    height: 150px;
+    z-index: -1;
+}
+.article__txt {
+    padding-left: 5%;
 }
 
 .article__category {
     color: #FCC84F;
     font-weight: 600;
     font-size: 13px;
-}
-.article__category--challenge {
-    color: black;
-    font-weight: 500;
-    font-size: 17px;
-    margin-right: 5px;
 }
 .article__title {
     font-weight: 500;
@@ -328,28 +325,58 @@ a {
 }
 .article__desc {
     margin-bottom: 30px;
-    width: 60%;
-}
-.article__desc--challenge {
-    width: 80%;
-    margin-bottom: 0;
-    font-size: 17px;
-}
-.article__desc--challenge--locked {
-    color: #FF7E4E;
-    width: 80%;
-    margin-bottom: 0;
-    font-size: 17px;
 }
 
 .article__xp {
     font-weight: 13px;
 }
 
-.article__img {
+.challenge {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #000000;
+    font-size: 17px;
+    min-height: 75px;
+    display: flex;
+    margin: 5%;
     position: relative;
-    bottom: 100px;
-    left: 55%;
+    align-items: center;
+}
+.challenge__bg {
+    position: absolute;
+    width: calc(100% - 30px);
+    box-shadow: 0px 5px 10px 0px #00000040;
+    border-radius: 20px;
+    height: 75px;
+    z-index: -1;
+}
+
+.challenge__bg--locked {
+    background-color: #E8E8E8;
+}
+.challenge__desc {
+    padding: 5%;
+    width: 100%;
+}
+.challenge__desc--locked {
+    color: #FF7E4E;
+}
+.challenge__category {
+    margin-right: 5%;
+    font-weight: 500;
+    color: #000000;
+}
+.challenge__icn {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 15px;
+    background-color: #A1AE64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge__icn--locked {
+    background-color: #FCC84F;
 }
 
 .nav__back {
@@ -578,4 +605,55 @@ a {
     font-weight: 300;
     font-size: 16px;
     color: #959595;
+}
+
+.calendar {
+    margin: 5%;
+    box-shadow: 2px 2px 15px 0px #00000040;
+    border-radius: 20px;
+}
+
+.calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto auto;
+    grid-auto-flow: rows;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    padding: 5% 5% 0 5%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.calendar__days--number {
+    color: #A1AE64;
+    font-size: 22px;
+    box-sizing: content-box;
+    padding-bottom: 25%;
+}
+.calendar__days--letter {
+    color: #FBB104;
+    font-size: 14px;
+}
+
+.calendar__days--active {
+    border-bottom: solid 2px #FBB104;
+}
+
+.calendar__event {
+    background-color: #FFB3D7;
+    box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.calendar__subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #D3D3D3;
+}
+
+.calendar__subtitle--yellow {
+    color: #FCC84F;
 }

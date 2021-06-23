@@ -1,4 +1,3 @@
-- groupe
 - Calendrier
 - defi et composant exterieur
 - map fullscreen
