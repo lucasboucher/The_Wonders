@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     
     <title>Composants The Wonders</title>
 </head>
@@ -23,211 +23,250 @@
             <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.44394 6.669C1.1091 6.76467 0.805039 6.94612 0.561851 7.19538C0.318663 7.44465 0.144775 7.75309 0.0573935 8.09019C-0.0299883 8.42729 -0.0278354 8.78137 0.0636392 9.11739C0.155114 9.4534 0.33274 9.75971 0.578941 10.006L3.99094 13.414V20H10.5839L14.0189 23.43C14.2032 23.6161 14.4225 23.7639 14.6641 23.8648C14.9058 23.9658 15.165 24.0178 15.4269 24.018C15.599 24.0177 15.7704 23.9955 15.9369 23.952C16.2739 23.8671 16.5826 23.695 16.8318 23.4529C17.0811 23.2108 17.2622 22.9073 17.3569 22.573L23.9909 0.0209961L1.44394 6.669ZM1.99994 8.592L19.0279 3.572L5.99294 16.586V12.586L1.99994 8.592ZM15.4399 22.016L11.4129 18H7.41294L20.4459 4.978L15.4399 22.016Z" fill="black"/></svg>messages</li>
         </ul>
     </nav>
-
-    <div class="logo logo--start"><h1>W</h1></div>
-
-    <div class="logo"><img src="assets/images/logo.png"/></div>
-
-    <div class="message">
-        <div class="message__title"><h1>Je suis un titre</h1></div>
-        <div class="message__text"><p>Tu as un rêve, un projet et tu en as marre de procrastiner ? Chaque semaine, nous te donnera les clés pour oser passer à l’action et vivre la vie dont tu rêves.</p></div>
-    </div>
-
-    <div class="illustration"><img src="assets/images/illustrations/idea.png"/></div>
     
-    <div class="slider">
-        <div class="slider__active"><a href="#">•</a></div>
-        <div class="slider__inactive"><a href="#">•</a></div>
-    </div>
-    
+    <div class="container">
+        <div class="logo logo--start"><h1>W</h1></div>
 
-    <button class="button button--pink"><a href="#">Je suis un bouton</a></button>
-    <button class="button button--gradient"><a href="#">Et moi aussi</a></button>
+        <div class="logo"><img src="assets/images/logo.png"/></div>
 
-    <div class="title"><a href="#">The Wonders</a></div>
-    
-    <div class="sep"><hr></div>
+        <div class="message">
+            <div class="message__title"><h1>Je suis un titre</h1></div>
+            <div class="message__text"><p>Tu as un rêve, un projet et tu en as marre de procrastiner ? Chaque semaine, nous te donnera les clés pour oser passer à l’action et vivre la vie dont tu rêves.</p></div>
+        </div>
 
-    <div class="signinwith signinwith--google"><img src="assets/icons/google.png"/>Sign In with Google</div>
-    <div class="signinwith signinwith--apple"><img src="assets/icons/apple.png"/>Sign In with Apple</div>
-    
-    <form class="form">
-        <div class="form__input">
-            <label class="form__label" for="input_name">Je suis un label</label>
-            <input type="text" id="input_name">
+        <div class="illustration"><img src="assets/images/illustrations/idea.png"/></div>
+        
+        <div class="slider">
+            <div class="slider__active"><a href="#">•</a></div>
+            <div class="slider__inactive"><a href="#">•</a></div>
         </div>
         
-        <label class="form__checkbox">J'accepte les termes du contrat
-            <input type="checkbox">
-            <span class="form__checkmark"></span>
-        </label>
-        <label class="form__checkbox">Ou pas
-            <input type="checkbox">
-            <span class="form__checkmark"></span>
-        </label>
+
+        <button class="button button--pink"><a href="#">Je suis un bouton</a></button>
+        <button class="button button--gradient"><a href="#">Et moi aussi</a></button>
+
+        <div class="title"><a href="#">The Wonders</a></div>
         
-        <input type="submit" class="button button--gradient" valut="Envoyer">
-        <div class="form__forgotten"><a>J'ai oublié quelque chose</a></div>
-    </form>
+        <div class="sep"><hr></div>
+
+        <div class="signinwith signinwith--google"><img src="assets/icons/google.png"/>Sign In with Google</div>
+        <div class="signinwith signinwith--apple"><img src="assets/icons/apple.png"/>Sign In with Apple</div>
+        
+        <form class="form">
+            <div class="form__input">
+                <label class="form__label" for="input_name">Je suis un label</label>
+                <input type="text" id="input_name">
+            </div>
+            
+            <label class="form__checkbox">J'accepte les termes du contrat
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+            <label class="form__checkbox">Ou pas
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+            
+            <input type="submit" class="button button--gradient" valut="Envoyer">
+            <div class="form__forgotten"><a>J'ai oublié quelque chose</a></div>
+        </form>
+        
+        <div class="template">
+            <div class="template__msg">
+                <h1>Welcome User</h1>
+                <h2>Have a good day !</h2>
+            </div>
+            <a href="#"><img src="assets/icons/profile.svg"></a>
+        </div>
+        <ul class="template__menu">
+            <li>Menu</li>
+            <li class="template__menu--active">Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+        </ul>
+
+        <div class="article">
+            <div class="article__txt">
+                <span class="article__category">Challenge</span>
+                <h1 class="article__title">C'est un titre</h1>
+                <p class="article__desc">Là tavu c'est une description donc je cherche de l'inspiration pour un texte plus long</p>
+                <span class="article__xp">1,000XP</span>
+            </div>
+            <img src="assets/images/photos/1.jpg"/>
+            <div class="article__bg"></div>
+        </div>
+
+        <div class="challenge">
+            <p class="challenge__desc"><span class="challenge__category">Challenge</span>Là tavu c'est l'intitulé d'un défi donc c'est pas trop long</p>
+            <div class="challenge__icn"><img src="assets/icons/checkmark.svg"></div>
+            <div class="challenge__bg"></div>
+        </div>
+
+        <div class="challenge challenge--locked">
+            <p class="challenge__desc challenge__desc--locked"><span class="challenge__category">Challenge</span>Soon available</p>
+            <div class="challenge__icn challenge__icn--locked"><img src="assets/icons/lock.svg"></div>
+            <div class="challenge__bg challenge__bg--locked"></div>
+        </div>
+
+
+        <div class="template__sep">
+            <h3>fin de sep</h3>
+            <hr/>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard__icn"><img src="assets/icons/cal.svg"/"></div>
+            <div class="dashboard__cal">
+                <div class="dashboard__cal_hour">00h00</div>
+                <div class="dashboard__cal_sep"></div>
+                <div class="dashboard__cal_event">
+                    <div>Cat event</div>
+                    <div class="dashboard__cal_event_title">Name event</div>
+                </div>
+            </div>
+            <div class="dashboard__bg"></div>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard__icn"><img src="assets/icons/stats.svg"/"></div>
+            <div class="dashboard__progression">
+                <div class="dashboard__progression_total"></div>
+                <div class="dashboard__progression_level"></div>
+                <div class="dashboard__progression_labels">
+                    <div>Niveau 0</div>
+                    <div>Niveau 0</div>
+                </div>
+                <div class="dashboard__progression_badges">
+                    <img src="assets/images/badges/1.png">
+                    <img src="assets/images/badges/2.png">
+                    <img src="assets/images/badges/3.png">
+                </div>
+            </div>
+            <div class="dashboard__bg"></div>
+        </div>
+
+        <img class="arrow" src="assets/icons/arrow.svg">
+
+        <div class="pack">
+            <h2 class="pack__title">Pack de test</h2>
+            <h3 class="pack__price">99€/mois</h3>
+            <ul class="pack__list">
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+            </ul>
+            <button class="button button--main button--audace">Acheter</button>
+            <button class="button button--secondary button--audace_secondary">Restaurer</button>
+        </div>
+
+        <div class="pack pack--pro">
+            <h2 class="pack__title">Pack de test</h2>
+            <h3 class="pack__price">99€/mois</h3>
+            <ul class="pack__list">
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+            </ul>
+            <button class="button button--main button--pro">Acheter</button>
+            <button class="button button--secondary button--pro_secondary">Restaurer</button>
+        </div>
+
+        <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.820862,53.071104,8.825239,53.073605&amp;layer=mapnik&amp;marker=53.07235,8.82290"></iframe>
+
+        <div class="nav_msg">
+            <ul>
+                <li class="nav_msg--active">Private</li>
+                <li><img src="assets/icons/add.svg"></li>
+                <li>Group</li>
+            </ul>
+        </div>
+
+        <div class="person">
+            <img class="person__photo" src="assets/images/photos/2.jpg">
+            <div>
+                <h3 class="person__name"">Ousmane Dembélé</h3>
+                <p class="person__lastmsg">Je suis le dernier message envoyé</p>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="calendar__days">
+                <div class="calendar__days--letter">L</div>
+                <div class="calendar__days--letter">M</div>
+                <div class="calendar__days--letter">M</div>
+                <div class="calendar__days--letter">J</div>
+                <div class="calendar__days--letter">V</div>
+                <div class="calendar__days--letter">S</div>
+                <div class="calendar__days--letter">D</div>
+                <div class="calendar__days--number calendar__days--active">1</div>
+                <div class="calendar__days--number">2</div>
+                <div class="calendar__days--number">3</div>
+                <div class="calendar__days--number">4</div>
+                <div class="calendar__days--number">5</div>
+                <div class="calendar__days--number">6</div>
+                <div class="calendar__days--number">7</div>
+            </div>
+            <div class="calendar__subtitles">
+                <div class="calendar__subtitle_hour">Heure</div>
+                <div class="calendar__subtitle_event">Evenement</div>
+                <div class="calendar__subtitle_sort">Trier</div>
+            </div>
+            <div class="calendar__events">
+                <div class="calendar__hours">
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                </div>
+                <div class="calendar__sep"></div>
+                <div class="calendar__infos">
+                    <div class="calendar__info calendar__info--pink">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn calendar__infos_icn--pink">
+                                <img src="assets/icons/website.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                    <div class="calendar__info calendar__info--yellow">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn calendar__infos_icn--yellow">
+                                <img src="assets/icons/present.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                    <div class="calendar__info">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn">
+                                <img src="assets/icons/phone.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <div class="template">
-        <div class="template__msg">
-            <h1>Welcome User</h1>
-            <h2>Have a good day !</h2>
-        </div>
-        <a href="#"><img src="assets/icons/profile.svg"></a>
-    </div>
-    <ul class="template__menu">
-        <li>Menu</li>
-        <li class="template__menu--active">Menu</li>
-        <li>Menu</li>
-        <li>Menu</li>
-    </ul>
-
-    <div class="article">
-        <div class="article__txt">
-            <span class="article__category">Challenge</span>
-            <h1 class="article__title">C'est un titre</h1>
-            <p class="article__desc">Là tavu c'est une description donc je cherche de l'inspiration pour un texte plus long</p>
-            <span class="article__xp">1,000XP</span>
-        </div>
-        <img src="assets/images/photos/1.jpg"/>
-        <div class="article__bg"></div>
-    </div>
-
-    <div class="challenge">
-        <p class="challenge__desc"><span class="challenge__category">Challenge</span>Là tavu c'est l'intitulé d'un défi donc c'est pas trop long</p>
-        <div class="challenge__icn"><img src="assets/icons/checkmark.svg"></div>
-        <div class="challenge__bg"></div>
-    </div>
-
-    <div class="challenge challenge--locked">
-        <p class="challenge__desc challenge__desc--locked"><span class="challenge__category">Challenge</span>Soon available</p>
-        <div class="challenge__icn challenge__icn--locked"><img src="assets/icons/lock.svg"></div>
-        <div class="challenge__bg challenge__bg--locked"></div>
-    </div>
-
-
-    <div class="template__sep">
-        <h3>fin de sep</h3>
-        <hr/>
-    </div>
-
-    <div class="dashboard">
-        <div class="dashboard__icn"><img src="assets/icons/cal.svg"/"></div>
-        <div class="dashboard__cal">
-            <div class="dashboard__cal_hour">00h00</div>
-            <div class="dashboard__cal_sep"></div>
-            <div class="dashboard__cal_event">
-                <div>Cat event</div>
-                <div class="dashboard__cal_event_title">Name event</div>
-            </div>
-        </div>
-        <div class="dashboard__bg"></div>
-    </div>
-
-    <div class="dashboard">
-        <div class="dashboard__icn"><img src="assets/icons/stats.svg"/"></div>
-        <div class="dashboard__progression">
-            <div class="dashboard__progression_total"></div>
-            <div class="dashboard__progression_level"></div>
-            <div class="dashboard__progression_labels">
-                <div>Niveau 0</div>
-                <div>Niveau 0</div>
-            </div>
-            <div class="dashboard__progression_badges">
-                <img src="assets/images/badges/1.png">
-                <img src="assets/images/badges/2.png">
-                <img src="assets/images/badges/3.png">
-            </div>
-        </div>
-        <div class="dashboard__bg"></div>
-    </div>
-
-    <img class="arrow" src="assets/icons/arrow.svg">
-
-    <div class="pack">
-        <h2 class="pack__title">Pack de test</h2>
-        <h3 class="pack__price">99€/mois</h3>
-        <ul class="pack__list">
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-        </ul>
-        <button class="button button--main button--audace">Acheter</button>
-        <button class="button button--secondary button--audace_secondary">Restaurer</button>
-    </div>
-
-    <div class="pack pack--pro">
-        <h2 class="pack__title">Pack de test</h2>
-        <h3 class="pack__price">99€/mois</h3>
-        <ul class="pack__list">
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-            <li>Fonction 1</li>
-        </ul>
-        <button class="button button--main button--pro">Acheter</button>
-        <button class="button button--secondary button--pro_secondary">Restaurer</button>
-    </div>
-
-    <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.820862,53.071104,8.825239,53.073605&amp;layer=mapnik&amp;marker=53.07235,8.82290"></iframe>
-
-    <div class="nav_msg">
-        <ul>
-            <li class="nav_msg--active">Private</li>
-            <li><img src="assets/icons/add.svg"></li>
-            <li>Group</li>
-        </ul>
-    </div>
-
-    <div class="person">
-        <img class="person__photo" src="assets/images/photos/2.jpg">
-        <div>
-            <h3 class="person__name"">Ousmane Dembélé</h3>
-            <p class="person__lastmsg">Je suis le dernier message envoyé</p>
-        </div>
-    </div>
-
-    <div class="calendar">
-        <div class="calendar__days">
-            <div class="calendar__days--letter">L</div>
-            <div class="calendar__days--letter">M</div>
-            <div class="calendar__days--letter">M</div>
-            <div class="calendar__days--letter">J</div>
-            <div class="calendar__days--letter">V</div>
-            <div class="calendar__days--letter">S</div>
-            <div class="calendar__days--letter">D</div>
-            <div class="calendar__days--number calendar__days--active">1</div>
-            <div class="calendar__days--number">2</div>
-            <div class="calendar__days--number">3</div>
-            <div class="calendar__days--number">4</div>
-            <div class="calendar__days--number">5</div>
-            <div class="calendar__days--number">6</div>
-            <div class="calendar__days--number">7</div>
-        </div>
-        <div class="calendar__events">
-            <div class="calendar__hours">
-                <div class="calendar__subtitle">Heure</div>
-                <div class="calendar__starthour">14:00</div>
-                <div class="calendar__endhour">15:00</div>
-            </div>
-            <div class="calendar__sep"></div>
-            <div class="calendar__subtitle">Evenement</div>
-            <div class="calendar__event">
-                <div class="calendar__event_title">Titre événement</div>
-                <div class="calendar__event_category">Catégorie événement</div>
-                <div class="calendar__event_favicon"><img src="assets/icons/favicon.svg"></div>
-                <div class="calendar__event_website">siteweb.com</div>
-            </div>
-        </div>
-        <div class="calendar__subtitle calendar__subtitle--yellow">Trier</div>
-    </div>
-
-
     <div class="logo logo--start nav__back"><h1>W</h1></div>
 </body>
 </html>
