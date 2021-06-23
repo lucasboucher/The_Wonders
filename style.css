@@ -77,7 +77,7 @@ a {
 .button {
     color: white;
     margin: auto;
-    padding: 10px 40px;
+    padding: 10px 60px;
     border-radius: 20px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
@@ -85,9 +85,34 @@ a {
     border: none;
 }
 
+.button--xs {
+    padding: 10px 30px;
+    font-size: 17px;
+    box-shadow: 1px 2px 13px 0px #00000040;
+    border-radius: 10px;
+}
+.button--s {
+    font-size: 22px;
+    box-shadow: 1px 2px 13px 0px #00000040;
+    border-radius: 10px;
+}
 
-.button--rose {
+.button--pink {
     background-color: #FF92C6;
+}
+.button--audace_secondary {
+    background-color: #B679D1;
+    color: #464646;
+}
+.button--audace {
+    background-color: #CEADDD;
+}
+.button--pro_secondary {
+    background-color: #C1CA96;
+    color: #464646;
+}
+.button--pro {
+    background-color: #A1AE64;
 }
 
 .button--gradient {
@@ -248,6 +273,21 @@ a {
 .template__msg h2 {
     font-weight: 400;
     font-size: 17px;
+    font-size: 16px;
+}
+
+.template__menu {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.template__menu--active {
+    color: #FBB104;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .article {
@@ -439,4 +479,49 @@ a {
     font-size: 7px;
     font-weight: 200;
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.pack {
+    background-color: #FDEAF3;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pack--pro {
+    background-color: #E4EDB8;
+}
+
+.pack__title {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+    margin-bottom: 10px;
+}
+.pack__price {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.pack__list {
+    font-family: 'Barlow Condensed',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.3px;
+    list-style: inside disc;
+    margin-bottom: 60px;
+}
+
+.pack button {
+    margin: auto;
+    margin-bottom: 10px;
 }
