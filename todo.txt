@@ -1,0 +1,10 @@
+- groupe
+- Calendrier
+- defi et composant exterieur
+- map fullscreen
+- background
+- alt img
+- insta
+- profil
+- rdv fatou planning
+    VERIF FICHIER composant

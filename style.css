@@ -525,3 +525,57 @@ a {
     margin: auto;
     margin-bottom: 10px;
 }
+
+.map {
+    border-radius: 20px;
+    height: 250px;
+    margin: 0 5%;
+}
+
+.nav_msg {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20%;
+}
+
+.nav_msg ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav_msg--active {
+    color: #FCC84F;
+    text-decoration: underline;
+}
+
+.person {
+    box-shadow: 2px 2px 15px 0px #00000040;
+    margin: 5%;
+    display: flex;
+    border-radius: 20px;
+    min-height: 75px;
+    font-family: 'Barlow Condensed', sans-serif;
+    align-items: center;
+}
+
+.person__name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.person__photo {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.person__lastmsg {
+    font-weight: 300;
+    font-size: 16px;
+    color: #959595;
+}
