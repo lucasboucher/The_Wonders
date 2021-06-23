@@ -1,9 +1,10 @@
 - Calendrier
-- defi et composant exterieur
+- defi et composants exterieurs
 - map fullscreen
 - background
 - alt img
 - insta
 - profil
 - rdv fatou planning
+- dashboard mettre un max/min height
     VERIF FICHIER composant

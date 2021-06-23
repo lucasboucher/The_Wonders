@@ -114,31 +114,34 @@
     </div>
 
     <div class="dashboard">
-        <div class="dashboard__calendar">
-            <!-- <div class="dashboard__icn"><img src="assets/icons/calendar.png"/></div> -->
-            <span class="dashboard__calendar_hour">12h00</span>
-            <div class="dashboard__calendar_sep"></div>
-            <div class="dashboard__calendar_content">
-                <h2 class="dashboard__calendar_category">Catégorie</h2>
-                <h3 class="dashboard__calendar_event">Titre événement</h3>
+        <div class="dashboard__icn"><img src="assets/icons/cal.svg"/"></div>
+        <div class="dashboard__cal">
+            <div class="dashboard__cal_hour">00h00</div>
+            <div class="dashboard__cal_sep"></div>
+            <div class="dashboard__cal_event">
+                <div>Cat event</div>
+                <div class="dashboard__cal_event_title">Name event</div>
             </div>
         </div>
-        <div class="dashboard__stats">
-            <!-- <div class="dashboard__icn"><img src="assets/icons/stats.png"/></div> -->
-            <div class="dashboard__stats_progression">
-                <div class="dashboard__stats_total"></div>
-                <div class="dashboard__stats_level"></div>
-                <div class="dashboard__stats_label"> 
-                    <span>Niveau 0</span>
-                    <span>Niveau 1000</span>
-                </div>
+        <div class="dashboard__bg"></div>
+    </div>
+
+    <div class="dashboard">
+        <div class="dashboard__icn"><img src="assets/icons/stats.svg"/"></div>
+        <div class="dashboard__progression">
+            <div class="dashboard__progression_total"></div>
+            <div class="dashboard__progression_level"></div>
+            <div class="dashboard__progression_labels">
+                <div>Niveau 0</div>
+                <div>Niveau 0</div>
             </div>
-            <div class="dashboard__badges">
+            <div class="dashboard__progression_badges">
                 <img src="assets/images/badges/1.png">
                 <img src="assets/images/badges/2.png">
                 <img src="assets/images/badges/3.png">
             </div>
         </div>
+        <div class="dashboard__bg"></div>
     </div>
 
     <img class="arrow" src="assets/icons/arrow.svg">
@@ -153,8 +156,8 @@
             <li>Fonction 1</li>
             <li>Fonction 1</li>
         </ul>
-        <button class="button button--s button--audace">Acheter</button>
-        <button class="button button--xs button--audace_secondary">Restaurer</button>
+        <button class="button button--main button--audace">Acheter</button>
+        <button class="button button--secondary button--audace_secondary">Restaurer</button>
     </div>
 
     <div class="pack pack--pro">
@@ -167,8 +170,8 @@
             <li>Fonction 1</li>
             <li>Fonction 1</li>
         </ul>
-        <button class="button button--s button--pro">Acheter</button>
-        <button class="button button--xs button--pro_secondary">Restaurer</button>
+        <button class="button button--main button--pro">Acheter</button>
+        <button class="button button--secondary button--pro_secondary">Restaurer</button>
     </div>
 
     <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.820862,53.071104,8.825239,53.073605&amp;layer=mapnik&amp;marker=53.07235,8.82290"></iframe>
@@ -180,7 +183,6 @@
             <li>Group</li>
         </ul>
     </div>
-
 
     <div class="person">
         <img class="person__photo" src="assets/images/photos/2.jpg">
@@ -206,26 +208,26 @@
             <div class="calendar__days--number">5</div>
             <div class="calendar__days--number">6</div>
             <div class="calendar__days--number">7</div>
-            </ul>
         </div>
-        <div class="calendar__subtitle">
-            <h4>Heure</h4>
-            <h4>Evenement</h4>
-            <h4 class="calendar__subtitle--yellow">Trier</h4>
+        <div class="calendar__events">
+            <div class="calendar__hours">
+                <div class="calendar__subtitle">Heure</div>
+                <div class="calendar__starthour">14:00</div>
+                <div class="calendar__endhour">15:00</div>
+            </div>
+            <div class="calendar__sep"></div>
+            <div class="calendar__subtitle">Evenement</div>
+            <div class="calendar__event">
+                <div class="calendar__event_title">Titre événement</div>
+                <div class="calendar__event_category">Catégorie événement</div>
+                <div class="calendar__event_favicon"><img src="assets/icons/favicon.svg"></div>
+                <div class="calendar__event_website">siteweb.com</div>
+            </div>
         </div>
-        <div class="calendar__hour">
-            <div class="calendar__hour--start"></div>
-        </div>
-        <div class="calendar__sep"></div>
-        <div class="calendar__event">
-            <div class="calendar__event_title">Titre d'un événement</div>
-            <div class="calendar__event_desc">Description d'un événement</div>
-            <div class="calendar__event_favicon"><img src="assets/icons/website.svg"/></div>
-            <div class="calendar__event_link"></div>
-        </div>
+        <div class="calendar__subtitle calendar__subtitle--yellow">Trier</div>
     </div>
 
-    <div class="logo logo--start nav__back"><h1>W</h1></div>
 
+    <div class="logo logo--start nav__back"><h1>W</h1></div>
 </body>
 </html>
