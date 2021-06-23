@@ -226,6 +226,19 @@ a {
     justify-content: space-between;
 }
 
+.template__sep {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0 5%;
+}
+
+.template__sep hr {
+    border: 1px solid;
+    width: 80%;
+}
+
 .template__msg h1 {
     font-weight: 600;
     font-size: 30px;
@@ -247,11 +260,26 @@ a {
     padding: 15px 10px;
     border-radius: 20px;
     margin-left: 5%;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.article--locked {
+    background-color: #E8E8E8;
+}
+
 .article__category {
     color: #FCC84F;
     font-weight: 600;
     font-size: 13px;
+}
+.article__category--challenge {
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 5px;
 }
 .article__title {
     font-weight: 500;
@@ -262,6 +290,17 @@ a {
     margin-bottom: 30px;
     width: 60%;
 }
+.article__desc--challenge {
+    width: 80%;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+.article__desc--challenge--locked {
+    color: #FF7E4E;
+    width: 80%;
+    margin-bottom: 0;
+    font-size: 17px;
+}
 
 .article__xp {
     font-weight: 13px;
@@ -271,6 +310,10 @@ a {
     position: relative;
     bottom: 100px;
     left: 55%;
+}
+
+.nav__back {
+    margin-bottom: 25%;
 }
 
 .nav {
@@ -311,4 +354,89 @@ a {
     width: 25px;
     margin: auto;
     margin-bottom: 5px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    min-height: 75px;
+}
+
+.dashboard__calendar {
+    box-shadow: 0px 5px 10px 0px #00000040;
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard__calendar_sep {
+    border-left: 1.5px solid #000;
+    height: 70px;
+    margin: 10px 0 0 5px;
+}
+
+.dashboard__calendar_content {
+    background-color: #EBEBEB;
+    border-radius: 0 10px 10px 0;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.dashboard__calendar_hour {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #B679D1;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.dashboard__calendar_category {
+    color: #B679D1;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.dashboard__calendar_event {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.dashboard__stats {
+    box-shadow: 0px 5px 10px 0px #00000040;
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard__stats_progression {
+    width: 70%;
+}
+.dashboard__stats_total {
+    height: 5px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.dashboard__stats_level {
+    position: relative;
+    top: -5px;
+    border-radius: 20px;
+    width: 66%;
+    height: 5px;
+    background-color: #973FBD;
+}
+.dashboard__stats_label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.dashboard__stats_label span  {
+    font-size: 7px;
+    font-weight: 200;
+    font-family: 'Barlow Condensed', sans-serif;
 }
