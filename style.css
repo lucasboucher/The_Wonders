@@ -1,4 +1,4 @@
-.component {
+body {
     display: flex;
     flex-direction: column;
 }
@@ -6,7 +6,12 @@
 @font-face {
     font-family: 'Blacker Pro Titling';
     src: url('assets/fonts/blacker-pro-titling-bold.otf') format('truetype');
-  }
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/fonts/SF-Pro-Display-Medium.otf') format('truetype');
+}
 
 * {
     box-sizing: border-box;
@@ -25,6 +30,7 @@ a {
     font-family: 'Blacker Pro Titling', sans-serif;
     font-size: 102px;
     color: white;
+    background-color: #5166CF;
 }
 
 .message {
@@ -37,13 +43,11 @@ a {
 .message__title {
     font-weight: 500;
     font-size: 29px;
-    letter-spacing: 1,68%;
     margin-bottom: 1em;
 }
 .message__text {
     font-weight: 400;
     font-size: 22px;
-    letter-spacing: -1.32%;
     line-height: 31.2px;
 }
 
@@ -73,39 +77,144 @@ a {
 .button {
     color: white;
     margin: auto;
-    width: 90%;
-    height: 50px;
+    padding: 10px 40px;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
     font-size: 26px;
-    letter-spacing: 1.68%;
+    border: none;
 }
+
 
 .button--rose {
     background-color: #FF92C6;
 }
-.button--gradient-XL {
-    background: linear-gradient(103.52deg, #B679D1 -14.05%, #5166CF 105.23%);
-    width: 80%;
-}
+
 .button--gradient {
     background: linear-gradient(103.52deg, #B679D1 -14.05%, #5166CF 105.23%);
-    width: 70%;
 }
 
 .title {
     color: #5166CF;
     font-family: 'Blacker Pro Titling', sans-serif;
     font-size: 26px;
-    letter-spacing: 1,68%;
     margin: auto;
 }
 
 .sep {
     width: 60%;
+    margin: auto;
+}
+
+.signinwith {
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    width: 65%;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.signinwith img {
+    width: 20px;
+    height: 20px;
+}
+
+.signinwith--apple {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signinwith--google {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.form {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    margin: auto;
+    width: 80%;
+}
+
+.form__label {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form__input input {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    border: none;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+}
+
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    margin-left: 10%;
+    line-height: 30px;
+}
+
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.form__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px black solid;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.form__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form__checkbox .form__checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.form__checkbox input:checked ~ .form__checkmark:after {
+    display: block;
+}
+
+.form__forgotten {
+    text-decoration: underline;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
     margin: auto;
 }
