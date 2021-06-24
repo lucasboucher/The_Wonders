@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    
+    <title>Composants The Wonders</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="nav--menu_active"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="nav--svg_active" d="M13.338 0.832994C12.9707 0.50243 12.4941 0.319519 12 0.319519C11.5059 0.319519 11.0293 0.50243 10.662 0.832994L0 10.429V20.829C0 21.6777 0.337142 22.4916 0.937258 23.0917C1.53737 23.6919 2.35131 24.029 3.2 24.029H20.8C21.6487 24.029 22.4626 23.6919 23.0627 23.0917C23.6629 22.4916 24 21.6777 24 20.829V10.429L13.338 0.832994ZM15 22.026H9V17C9 16.2043 9.31607 15.4413 9.87868 14.8787C10.4413 14.3161 11.2044 14 12 14C12.7956 14 13.5587 14.3161 14.1213 14.8787C14.6839 15.4413 15 16.2043 15 17V22.026ZM22 20.826C22 21.1443 21.8736 21.4495 21.6485 21.6745C21.4235 21.8996 21.1183 22.026 20.8 22.026H17V17C17 15.6739 16.4732 14.4021 15.5355 13.4645C14.5979 12.5268 13.3261 12 12 12C10.6739 12 9.40215 12.5268 8.46447 13.4645C7.52678 14.4021 7 15.6739 7 17V22.026H3.2C2.88174 22.026 2.57652 21.8996 2.35147 21.6745C2.12643 21.4495 2 21.1443 2 20.826V11.319L12 2.31899L22 11.319V20.826Z" fill="black"/></svg>home</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 2H18V0H16V2H8V0H6V2H3C2.20435 2 1.44129 2.31607 0.87868 2.87868C0.31607 3.44129 0 4.20435 0 5L0 24H24V5C24 4.20435 23.6839 3.44129 23.1213 2.87868C22.5587 2.31607 21.7956 2 21 2ZM2 5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V8H2V5ZM2 22V10H22V22H2Z" fill="black"/><path d="M17 13H15V15H17V13Z" fill="black"/><path d="M13 13H11V15H13V13Z" fill="black"/><path d="M9 13H7V15H9V13Z" fill="black"/><path d="M17 17H15V19H17V17Z" fill="black"/><path d="M13 17H11V19H13V17Z" fill="black"/><path d="M9 17H7V19H9V17Z" fill="black"/></svg>calendrier</li>
+            <li><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 19.707H3C2.20435 19.707 1.44129 19.3909 0.87868 18.8283C0.31607 18.2657 0 17.5026 0 16.707L0 0.292999L6 6.293L12 0.292999L18 6.293L24 0.292999V16.707C24 17.5026 23.6839 18.2657 23.1213 18.8283C22.5587 19.3909 21.7956 19.707 21 19.707ZM2 5.121V16.707C2 16.9722 2.10536 17.2266 2.29289 17.4141C2.48043 17.6016 2.73478 17.707 3 17.707H21C21.2652 17.707 21.5196 17.6016 21.7071 17.4141C21.8946 17.2266 22 16.9722 22 16.707V5.121L18 9.121L12 3.121L6 9.121L2 5.121Z" fill="black"/></svg>défis</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 4H18V2C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0L8 0C7.46957 0 6.96086 0.210714 6.58579 0.585786C6.21071 0.960859 6 1.46957 6 2V4H3C2.20435 4 1.44129 4.31607 0.87868 4.87868C0.31607 5.44129 0 6.20435 0 7L0 24H24V7C24 6.20435 23.6839 5.44129 23.1213 4.87868C22.5587 4.31607 21.7956 4 21 4ZM8 2H16V4H8V2ZM3 6H21C21.2652 6 21.5196 6.10536 21.7071 6.29289C21.8946 6.48043 22 6.73478 22 7V12H2V7C2 6.73478 2.10536 6.48043 2.29289 6.29289C2.48043 6.10536 2.73478 6 3 6ZM2 22V14H11V16H13V14H22V22H2Z" fill="black"/></svg>boîte à outils</li>
+            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.44394 6.669C1.1091 6.76467 0.805039 6.94612 0.561851 7.19538C0.318663 7.44465 0.144775 7.75309 0.0573935 8.09019C-0.0299883 8.42729 -0.0278354 8.78137 0.0636392 9.11739C0.155114 9.4534 0.33274 9.75971 0.578941 10.006L3.99094 13.414V20H10.5839L14.0189 23.43C14.2032 23.6161 14.4225 23.7639 14.6641 23.8648C14.9058 23.9658 15.165 24.0178 15.4269 24.018C15.599 24.0177 15.7704 23.9955 15.9369 23.952C16.2739 23.8671 16.5826 23.695 16.8318 23.4529C17.0811 23.2108 17.2622 22.9073 17.3569 22.573L23.9909 0.0209961L1.44394 6.669ZM1.99994 8.592L19.0279 3.572L5.99294 16.586V12.586L1.99994 8.592ZM15.4399 22.016L11.4129 18H7.41294L20.4459 4.978L15.4399 22.016Z" fill="black"/></svg>messages</li>
+        </ul>
+    </nav>
+    
+    <div class="test">
+        <div class="logo logo--start"><h1>W</h1></div>
+
+        <div class="logo"><img src="assets/images/logo.png"/></div>
+
+        <div class="message">
+            <div class="message__title"><h1>Je suis un titre</h1></div>
+            <div class="message__text"><p>Tu as un rêve, un projet et tu en as marre de procrastiner ? Chaque semaine, nous te donnera les clés pour oser passer à l’action et vivre la vie dont tu rêves.</p></div>
+        </div>
+
+        <div class="illustration"><img src="assets/images/illustrations/idea.png"/></div>
+        
+        <div class="slider">
+            <div class="slider__active"><a href="#">•</a></div>
+            <div class="slider__inactive"><a href="#">•</a></div>
+        </div>
+        
+
+        <button class="button button--pink"><a href="#">Je suis un bouton</a></button>
+        <button class="button button--yellow"><a href="#">Je suis un bouton</a></button>
+        <button class="button button--green"><a href="#">Je suis un bouton</a></button>
+        <button class="button button--blue"><a href="#">Je suis un bouton</a></button>
+        <button class="button button--gradient"><a href="#">Et moi aussi</a></button>
+
+        <div class="title"><a href="#">The Wonders</a></div>
+        
+        <div class="sep"><hr></div>
+
+        <div class="signinwith signinwith--google"><img src="assets/icons/google.png"/>Sign In with Google</div>
+        <div class="signinwith signinwith--apple"><img src="assets/icons/apple.png"/>Sign In with Apple</div>
+        
+        <form class="form">
+            <div class="form__input">
+                <label class="form__label" for="input_name">Je suis un label</label>
+                <input type="text" id="input_name">
+            </div>
+            
+            <label class="form__checkbox">J'accepte les termes du contrat
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+            <label class="form__checkbox">Ou pas
+                <input type="checkbox">
+                <span class="form__checkmark"></span>
+            </label>
+            
+            <input type="submit" class="button button--gradient" valut="Envoyer">
+            <div class="form__forgotten"><a>J'ai oublié quelque chose</a></div>
+        </form>
+        
+        <div class="template">
+            <div class="template__msg">
+                <h1>Welcome User</h1>
+                <h2>Have a good day !</h2>
+            </div>
+            <a href="#"><img src="assets/icons/profile.svg"></a>
+        </div>
+        <ul class="template__menu">
+            <li>Menu</li>
+            <li class="template__menu--active">Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+        </ul>
+        <div class="template__subtitles">
+            <div class="template__subtitle">Sous-titre</div>
+            <div class="template__seemore">Voir plus</div>
+        </div>
+
+        <div class="article">
+            <div class="article__txt">
+                <span class="article__category">Challenge</span>
+                <h1 class="article__title">C'est un titre</h1>
+                <p class="article__desc">Là tavu c'est une description donc je cherche de l'inspiration pour un texte plus long</p>
+                <span class="article__xp">1,000XP</span>
+            </div>
+            <img src="assets/images/photos/1.jpg"/>
+            <div class="article__bg"></div>
+        </div>
+
+        <div class="challenge">
+            <p class="challenge__desc"><span class="challenge__category">Challenge</span>Là tavu c'est l'intitulé d'un défi donc c'est pas trop long</p>
+            <div class="challenge__icn"><img src="assets/icons/checkmark.svg"></div>
+            <div class="challenge__bg"></div>
+        </div>
+
+        <div class="challenge challenge--locked">
+            <p class="challenge__desc challenge__desc--locked"><span class="challenge__category">Challenge</span>Soon available</p>
+            <div class="challenge__icn challenge__icn--locked"><img src="assets/icons/lock.svg"></div>
+            <div class="challenge__bg challenge__bg--locked"></div>
+        </div>
+
+
+        <div class="template__sep">
+            <h3>fin de sep</h3>
+            <hr/>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard__icn"><img src="assets/icons/cal.svg"/"></div>
+            <div class="dashboard__cal">
+                <div class="dashboard__cal_hour">00h00</div>
+                <div class="dashboard__cal_sep"></div>
+                <div class="dashboard__cal_event">
+                    <div>Cat event</div>
+                    <div class="dashboard__cal_event_title">Name event</div>
+                </div>
+            </div>
+            <div class="dashboard__bg"></div>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard__icn"><img src="assets/icons/stats.svg"/"></div>
+            <div class="dashboard__progression">
+                <div class="dashboard__progression_total"></div>
+                <div class="dashboard__progression_level"></div>
+                <div class="dashboard__progression_labels">
+                    <div>Niveau 0</div>
+                    <div>Niveau 0</div>
+                </div>
+                <div class="dashboard__progression_badges">
+                    <img src="assets/images/badges/1.png">
+                    <img src="assets/images/badges/2.png">
+                    <img src="assets/images/badges/3.png">
+                </div>
+            </div>
+            <div class="dashboard__bg"></div>
+        </div>
+
+        <img class="arrow" src="assets/icons/arrow.svg">
+
+        <div class="pack">
+            <h2 class="pack__title">Pack de test</h2>
+            <h3 class="pack__price">99€/mois</h3>
+            <ul class="pack__list">
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+            </ul>
+            <button class="button button--main button--audace">Acheter</button>
+            <button class="button button--secondary button--audace_secondary">Restaurer</button>
+        </div>
+
+        <div class="pack pack--pro">
+            <h2 class="pack__title">Pack de test</h2>
+            <h3 class="pack__price">99€/mois</h3>
+            <ul class="pack__list">
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+                <li>Fonction 1</li>
+            </ul>
+            <button class="button button--main button--pro">Acheter</button>
+            <button class="button button--secondary button--pro_secondary">Restaurer</button>
+        </div>
+
+        <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.820862,53.071104,8.825239,53.073605&amp;layer=mapnik&amp;marker=53.07235,8.82290"></iframe>
+
+        <div class="nav_msg">
+            <ul>
+                <li class="nav_msg--active">Private</li>
+                <li><img src="assets/icons/add.svg"></li>
+                <li>Group</li>
+            </ul>
+        </div>
+
+        <div class="person">
+            <img class="person__photo" src="assets/images/photos/2.jpg">
+            <div>
+                <h3 class="person__name"">Ousmane Dembélé</h3>
+                <p class="person__lastmsg">Je suis le dernier message envoyé</p>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="calendar__days">
+                <div class="calendar__days--letter">L</div>
+                <div class="calendar__days--letter">M</div>
+                <div class="calendar__days--letter">M</div>
+                <div class="calendar__days--letter">J</div>
+                <div class="calendar__days--letter">V</div>
+                <div class="calendar__days--letter">S</div>
+                <div class="calendar__days--letter">D</div>
+                <div class="calendar__days--number calendar__days--active">1</div>
+                <div class="calendar__days--number">2</div>
+                <div class="calendar__days--number">3</div>
+                <div class="calendar__days--number">4</div>
+                <div class="calendar__days--number">5</div>
+                <div class="calendar__days--number">6</div>
+                <div class="calendar__days--number">7</div>
+            </div>
+            <div class="calendar__subtitles">
+                <div class="calendar__subtitle_hour">Heure</div>
+                <div class="calendar__subtitle_event">Evenement</div>
+                <div class="calendar__subtitle_sort">Trier</div>
+            </div>
+            <div class="calendar__events">
+                <div class="calendar__hours">
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                    <div class="calendar__hour">
+                        <div class="calendar__hour--start">00h00</div>
+                        <div>23h59</div>
+                    </div>
+                </div>
+                <div class="calendar__sep"></div>
+                <div class="calendar__infos">
+                    <div class="calendar__info calendar__info--pink">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn calendar__infos_icn--pink">
+                                <img src="assets/icons/website.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                    <div class="calendar__info calendar__info--yellow">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn calendar__infos_icn--yellow">
+                                <img src="assets/icons/present.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                    <div class="calendar__info">
+                        <div class="calendar__infos_title">Titre événement</div>
+                        <div class="calendar__infos_type">Catégorie événement</div>
+                        <div class="calendar__infos_website">
+                            <div class="calendar__infos_icn">
+                                <img src="assets/icons/phone.svg">
+                            </div>
+                            <div class="calendar__infos_name">siteweb.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img class="profile__photo" src="assets/images/photos/4.png">
+            <h2 class="profile__name">Claire Buzon</h2>
+            <h3 class="profile__level">Curieuse - 13 défis réalisés</h3>
+        </div>
+
+        <div class="badges">
+            <img src="assets/images/badges/1.png">
+            <img src="assets/images/badges/2.png">
+            <img src="assets/images/badges/3.png">
+            <img src="assets/images/badges/4.png">
+        </div>
+
+        <div class="challenges">
+            <p><span class="challenges__id">Défi 1</span>Que pense vos amis de vous ?</p>
+            <div class="challenges__icn"><img src="assets/icons/checkmark.svg"></div>
+        </div> 
+        <div class="stats">
+            <div class="stats__bg">0xp</div>
+            <div class="stats__total"></div>
+            <div class="stats__level"></div>
+        </div>
+        <div class="progression">
+            <div class="progression_title">Titre Widget XP</div>
+            <div class="progression_total"></div>
+            <div class="progression_level"></div>
+            <div class="progression_labels">
+                <div>Niveau 0</div>
+                <div>Niveau 0</div>
+            </div>
+        </div>
+    
+        <div class="header" >
+            <svg  class="header__arrow" viewBox="0 0 20 13" xmlns="http://www.w3.org/2000/svg"><path d="M18.1666 2.41138L9.99992 10.3709L1.83325 2.41138" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/ fill="none"></svg>
+            <img src="assets/images/photos/5.jpg">
+        </div>
+
+        <div class="content">
+            <div class="content__category content__category--yellow">Je suis catégorie</div>
+            <div class="content__category content__category--green">Je suis catégorie</div>
+            <div class="content__category content__category--blue">Je suis catégorie</div>
+            <div class="content__title">Je suis pas catégorie</div>
+            <div class="content__subtitle">Je suis sous-titre</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa facilis debitis sit corporis dolore? Minima perspiciatis itaque expedita odit fugit labore, officia eius! Ducimus, nulla necessitatibus fugit quia tempora nobis.</p>
+        </div>
+
+        <div class="checkmark">
+            <img src="assets/icons/check.svg"/>
+        </div>
+    </div>
+
+    <div class="fsmap">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=8.820862,53.071104,8.825239,53.073605&amp;layer=mapnik&amp;marker=53.07235,8.82290"></iframe>
+        <div class="fsmap__localization"></div>
+        <div class="fsmap__person"><img src="assets/images/photos/4.png"></div>
+        <div class="fsmap__menu">
+            <img src="assets/images/photos/4.png"/>
+            <div class="fsmap__menu_infos">
+                <div class="fsmap__menu_name">Nom Prénom</div>
+                <div class="fsmap__menu_level">Mon niveau pas terrible</div>
+            </div>
+            <div class="fsmap__menu_contact">
+                <div class="fsmap__menu_icn"><img src="assets/icons/chat.svg"></div>
+                <div class="fsmap__menu_icn"><img src="assets/icons/user.svg"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logo logo--start nav__back"><h1>W</h1></div>
+</body>
+</html>
