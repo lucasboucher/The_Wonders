@@ -1,10 +1,11 @@
-- defi et composants exterieurs
-- map fullscreen
-- rdv fatou planning
+- petits composants exterieurs : feedback, sahre insta, popups, congrats inscirptions, badges list
+
+- chat & match
 
 - a balise
 - background
 - alt img
-- insta
+- insta template
+- notifs, apple pay
 
 VERIF FICHIER composant
