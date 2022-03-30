@@ -1,4 +1,4 @@
-# "Les Défis The Wonders" App
+# "Les Défis The Wonders" Web app
 
 End of first year school project at HETIC
 From a _Figma_ model to a website developed with :
